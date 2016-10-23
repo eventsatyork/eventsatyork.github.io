@@ -42,12 +42,12 @@ $(document).ready(function () {
         $.ajax({
            url: 'https://blooming-woodland-41263.herokuapp.com/api/sendText',
            type: 'GET',
-           dataType: "json"
+           dataType: "json",
            success: function(data){
-              //alert('Success!');
+              alert('Success!');
            }
            , error: function(data, jqXHR, textStatus, err){
-               //  console.log("data" + data);
+               console.log("data" + data);
                // alert('jqXHR' + jqXHR + 'text status '+textStatus+', err '+err);
            }
          });
